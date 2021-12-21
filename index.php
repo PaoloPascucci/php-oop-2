@@ -20,7 +20,7 @@ class User {
 
  }
     public function setPassword(int $number){
-        $this->number = hash('md5',$number);
+        $this->number = hash('md5', $number);
     }
         public function setCreditCard(string $nameCard){
         $this->nameCard = $nameCard;
@@ -42,5 +42,5 @@ class PremUser extends User{
 $user_1 = new User('Paolo', 22);
 
 $user_1 ->setCreditCard(4256321789998855);
-$user_1->setPassword('Lallerolalala');
+$user_1->setPassword(123456789);
 var_dump($user_1);
